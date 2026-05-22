@@ -46,6 +46,7 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
    Smolk(
     "Bomb B Smolk Miragem",
     "Smolk CT",
+
     R.drawable.smolk_icon
    ),
 
