@@ -66,7 +66,8 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
    val listaBanners = listOf(
     R.drawable.infbanner,
     R.drawable.mirabanner,
-    R.drawable.miragebanner
+    R.drawable.miragebanner,
+
    )
   binding.viewPagerBanner.adapter = BannerAdapter(listaBanners)
   handler.postDelayed(bannerRunnable, 3000)

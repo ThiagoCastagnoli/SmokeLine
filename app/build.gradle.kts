@@ -45,6 +45,7 @@ android {
 
 dependencies {
 
+    implementation("io.coil-kt:coil:2.7.0")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.navigation:navigation-fragment-ktx:2.8.9")
