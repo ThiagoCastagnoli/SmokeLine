@@ -1,4 +1,4 @@
-# 🚬 SmokeLine
+#  SmokeLine
 
 <p align="center">
   <img src="https://img.shields.io/badge/Kotlin-Android-purple?style=for-the-badge&logo=kotlin"/>
