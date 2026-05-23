@@ -67,6 +67,8 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
     R.drawable.infbanner,
     R.drawable.mirabanner,
     R.drawable.miragebanner,
+    R.drawable.viewbanner2
+
 
    )
   binding.viewPagerBanner.adapter = BannerAdapter(listaBanners)

@@ -4,20 +4,19 @@
 
     <item
         android:id="@id/smokesFragment"
-        android:title="Smokes"
-        android:icon="@drawable/smolk_icon"
+        android:title="Home"
+        android:icon="@drawable/botaohome"
 
         />
 
     <item
-        android:id="@id/flashFragment"
-        android:title="Flash"
-        android:icon="@drawable/flash_icoon"/>
+        android:id="@id/mapasFragment"
+        android:title="Mapas"
+        android:icon="@drawable/mapa"/>
 
     <item
         android:id="@id/molloFragment"
-        android:title="Mollo"
-        android:icon="@drawable/mollotov_icon"/>
+        android:title="Mollo" />
 
     <item
         android:id="@id/favoritosFragment"

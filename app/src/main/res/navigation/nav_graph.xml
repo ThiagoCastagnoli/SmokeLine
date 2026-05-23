@@ -31,10 +31,10 @@
         android:label="Smokes" />
 
     <fragment
-        tools:layout="@layout/flash_fragment"
-        android:id="@+id/flashFragment"
-        android:name="com.example.smolkline.Fragments.FlashFragment"
-        android:label="Flash" />
+        tools:layout="@layout/mapas_fragment"
+        android:id="@+id/mapasFragment"
+        android:name="com.example.smolkline.Fragments.MapasFragment"
+        android:label="Mapas" />
 
     <fragment
         tools:layout="@layout/mollo_fragment"
