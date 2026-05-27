@@ -5,9 +5,12 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.smolkline.Classes.Mapas
 import com.example.smolkline.Classes.Smolk
 import com.example.smolkline.R
+import com.example.smolkline.adapters.AdapterMapas
 import com.example.smolkline.adapters.BannerAdapter
 import com.example.smolkline.adapters.SmolkAdapter
 import com.example.smolkline.databinding.SmokesFragmentBinding
@@ -64,16 +67,27 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
    SmolkAdapter(lista)
 
    val listaBanners = listOf(
-    R.drawable.infbanner,
+    R.drawable.bannernew,
     R.drawable.mirabanner,
     R.drawable.miragebanner,
-    R.drawable.viewbanner2
+    R.drawable.viewbanner2,
+    R.drawable.bannernew,
+    R.drawable.infbanner
 
 
    )
   binding.viewPagerBanner.adapter = BannerAdapter(listaBanners)
   handler.postDelayed(bannerRunnable, 3000)
 
+
+
+  val recyclerMaps = binding.recyclerMaps
+  val listaMapas = listOf(
+   Mapas("Mirage", "20 smokes", R.drawable.img_mirage, R.drawable.logo_mirage), 
+  )
+  recyclerMaps.layoutManager = GridLayoutManager(requireContext(), 4)
+  recyclerMaps.adapter = AdapterMapas(listaMapas)
+  binding.recyclerMaps.isNestedScrollingEnabled = false
 
  }
 

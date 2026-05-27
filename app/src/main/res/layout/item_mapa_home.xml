@@ -76,7 +76,7 @@
                 android:textAllCaps="true"
                 android:textColor="#FFC107"
                 android:textSize="10sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
