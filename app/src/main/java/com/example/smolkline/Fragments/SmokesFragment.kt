@@ -5,6 +5,8 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.smolkline.Classes.Mapas
@@ -14,6 +16,7 @@ import com.example.smolkline.adapters.AdapterMapas
 import com.example.smolkline.adapters.BannerAdapter
 import com.example.smolkline.adapters.SmolkAdapter
 import com.example.smolkline.databinding.SmokesFragmentBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class SmokesFragment : Fragment(R.layout.smokes_fragment) {
@@ -49,7 +52,6 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
    Smolk(
     "Bomb B Smolk Miragem",
     "Smolk CT",
-
     R.drawable.smolk_icon
    ),
 
@@ -59,6 +61,15 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
     R.drawable.cabecinha
    )
   )
+
+  val bottomNav =
+   requireActivity().findViewById<BottomNavigationView>(R.id.buttomNav_View)
+
+  binding.txtVerTodos.setOnClickListener {
+
+   bottomNav.selectedItemId = R.id.mapasFragment
+
+  }
 
   binding.recyclerSmolk.layoutManager =
    LinearLayoutManager(requireContext())
@@ -83,7 +94,7 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
 
   val recyclerMaps = binding.recyclerMaps
   val listaMapas = listOf(
-   Mapas("Mirage", "20 smokes", R.drawable.img_mirage, R.drawable.logo_mirage), 
+   Mapas("Mirage", "20 smokes", R.drawable.img_mirage, R.drawable.logo_mirage),
   )
   recyclerMaps.layoutManager = GridLayoutManager(requireContext(), 4)
   recyclerMaps.adapter = AdapterMapas(listaMapas)
