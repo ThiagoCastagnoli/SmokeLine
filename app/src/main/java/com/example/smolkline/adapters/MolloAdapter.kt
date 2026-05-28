@@ -9,7 +9,7 @@ import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smolkline.Classes.Mollo
-import com.example.smolkline.Fragments.HomePageFramentsDirections
+import com.example.smolkline.Fragments.HomePageFramentDirections
 import com.example.smolkline.R
 
 class MolloAdapter(
@@ -37,7 +37,7 @@ class MolloAdapter(
         holder.subTitulo.text = item.subTitulo
         holder.image.setImageResource(item.image)
         holder.card.setOnClickListener {
-            val action = HomePageFramentsDirections.actionHomeFragmentToVideoFragment()
+            val action = HomePageFramentDirections.actionHomeFragmentToVideoFragment()
             holder.itemView.findNavController().navigate(action)
         }
     }

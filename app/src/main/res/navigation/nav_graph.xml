@@ -7,15 +7,20 @@
     <fragment
         tools:layout="@layout/home_page"
         android:id="@+id/homepageFrament"
-        android:name="com.example.smolkline.Fragments.HomePageFraments"
+        android:name="com.example.smolkline.Fragments.HomePageFrament"
         android:label="homepageFrament" >
         <action
             android:id="@+id/action_homepageFrament_to_home_screen"
-            app:destination="@id/home_screen"
+            app:destination="@id/home_screen"/>
+
+        <action
+            android:id="@+id/action_homePageFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
 
 
-            />
+
     </fragment>
+
 
 
     <fragment android:id="@+id/home_screen"
@@ -56,6 +61,9 @@
             android:id="@+id/action_homeFragment_to_videoFragment"
             app:destination="@id/videoFragment"/>
 
+
+
+
             <argument
                 android:name="video"
                 app:argType="string" />
@@ -69,4 +77,14 @@
             android:id="@+id/action_homeFragment_to_videoFlash_fragment"
             app:destination="@id/videoFlash"
         />
+
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.smolkline.Fragments.CadastroFragment"
+        android:label="Cadastro"
+        tools:layout="@layout/cadastro_fragment">
+        <action
+            android:id="@+id/action_cadastroFragment_to_homepageFrament"
+            app:destination="@id/homepageFrament" />
+    </fragment>/>
 </navigation>
