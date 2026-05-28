@@ -88,15 +88,23 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
 
    )
   binding.viewPagerBanner.adapter = BannerAdapter(listaBanners)
-  handler.postDelayed(bannerRunnable, 3000)
+  handler.postDelayed(bannerRunnable, 2000)
 
 
 
   val recyclerMaps = binding.recyclerMaps
   val listaMapas = listOf(
    Mapas("Mirage", "20 smokes", R.drawable.img_mirage, R.drawable.logo_mirage),
+   Mapas("Dust_2", "20 Smokes", R.drawable.map_dust, R.drawable.logo_dust),
+   Mapas("Inferno", "20 Smokes", R.drawable.map_inf, R.drawable.logo_inf),
+   Mapas("Nuke", "20 Smokes", R.drawable.mapa_nuke, R.drawable.logo_nuke,),
+   Mapas("Overpass", "20 Smokes", R.drawable.map_over, R.drawable.logo_over),
+   Mapas("Anubis", "20 Smokes", R.drawable.map_anubis, R.drawable.logo_anubis),
+   Mapas("Ancient", "20 Smokes", R.drawable.map_ansient, R.drawable.logo_ancient),
+   Mapas("cache", "20 Smokes", R.drawable.map_cahce, R.drawable.logo_cache)
   )
-  recyclerMaps.layoutManager = GridLayoutManager(requireContext(), 4)
+  binding.recyclerMaps.layoutManager =
+   LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
   recyclerMaps.adapter = AdapterMapas(listaMapas)
   binding.recyclerMaps.isNestedScrollingEnabled = false
 

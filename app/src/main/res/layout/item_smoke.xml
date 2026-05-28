@@ -18,6 +18,7 @@
 
 
     <LinearLayout
+        android:background="#363636"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -49,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bomb B Smoke"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -58,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Do Fundo para Bombsite B"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="13sp" />
         </LinearLayout>
 

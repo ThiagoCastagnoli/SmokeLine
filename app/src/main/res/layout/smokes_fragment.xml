@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/txtMapas" />
 
-    <!-- HORIZONTAL MAPS -->
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerMaps"
