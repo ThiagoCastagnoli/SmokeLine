@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.smolkline.Classes.Mapas
 import com.example.smolkline.R
 
-class AdapterMapas(private val lista: List<Mapas>):
-RecyclerView.Adapter<AdapterMapas.ViewHolder>() {
+class MapasAdapter(private val lista: List<Mapas>):
+RecyclerView.Adapter<MapasAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val nome = view.findViewById<TextView>(R.id.txtMapName)

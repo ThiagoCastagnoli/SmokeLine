@@ -1,5 +1,6 @@
 package com.example.smolkline.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,8 @@ import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smolkline.Classes.Mollo
-import com.example.smolkline.Fragments.HomePageFramentDirections
+import com.example.smolkline.Fragments.LoginFragment
+import com.example.smolkline.Fragments.LoginFragmentDirections
 import com.example.smolkline.R
 
 class MolloAdapter(
@@ -37,7 +39,7 @@ class MolloAdapter(
         holder.subTitulo.text = item.subTitulo
         holder.image.setImageResource(item.image)
         holder.card.setOnClickListener {
-            val action = HomePageFramentDirections.actionHomeFragmentToVideoFragment()
+            val action = LoginFragmentDirections.actionHomeFragmentToVideoFragment()
             holder.itemView.findNavController().navigate(action)
         }
     }

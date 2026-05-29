@@ -7,7 +7,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.smolkline.R
 import com.example.smolkline.databinding.HomePageBinding
 
-class HomePageFrament : Fragment(R.layout.home_page) {
+class LoginFragment : Fragment(R.layout.home_page) {
 
     private var _binding: HomePageBinding? = null
     private val binding get() = _binding!!

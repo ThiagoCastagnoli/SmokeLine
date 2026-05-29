@@ -9,7 +9,8 @@ import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smolkline.Classes.Smolk
-import com.example.smolkline.Fragments.HomePageFramentDirections
+import com.example.smolkline.Fragments.LoginFragment
+import com.example.smolkline.Fragments.LoginFragmentDirections
 import com.example.smolkline.Fragments.SmokesFragment
 import com.example.smolkline.R
 
@@ -40,7 +41,7 @@ import com.example.smolkline.R
         holder.subTitulo.text = item.subTitulo
         holder.imagem.setImageResource(item.imagem) // <-- coloca a Imagem
         holder.card.setOnClickListener {
-            val action = HomePageFramentDirections.actionHomeFragmentToVideoFragment()
+            val action = LoginFragmentDirections.actionHomeFragmentToVideoFragment()
             holder.itemView.findNavController().navigate(action)
         }
     }

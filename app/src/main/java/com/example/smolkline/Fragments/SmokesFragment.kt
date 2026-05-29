@@ -5,14 +5,11 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.smolkline.Classes.Mapas
 import com.example.smolkline.Classes.Smolk
 import com.example.smolkline.R
-import com.example.smolkline.adapters.AdapterMapas
+import com.example.smolkline.adapters.MapasAdapter
 import com.example.smolkline.adapters.BannerAdapter
 import com.example.smolkline.adapters.SmolkAdapter
 import com.example.smolkline.databinding.SmokesFragmentBinding
@@ -105,7 +102,7 @@ class SmokesFragment : Fragment(R.layout.smokes_fragment) {
   )
   binding.recyclerMaps.layoutManager =
    LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-  recyclerMaps.adapter = AdapterMapas(listaMapas)
+  recyclerMaps.adapter = MapasAdapter(listaMapas)
   binding.recyclerMaps.isNestedScrollingEnabled = false
 
  }
